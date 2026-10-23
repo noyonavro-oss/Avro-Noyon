@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ffb4ab", "on-tertiary-container": "#c1ffc6", "inverse-on-surface": "#283045", "surface-dim": "#0a1326", "surface-tint": "#b4c5ff", "on-primary-fixed-variant": "#003ea8", "surface-container-high": "#222a3e", "on-error": "#690005", "outline-variant": "#434655", "on-tertiary": "#003916", "on-primary-fixed": "#00174b", "on-secondary-container": "#005469", "on-secondary-fixed": "#001f28", "secondary-container": "#00cefe", "tertiary-fixed": "#65ff8f", "tertiary-fixed-dim": "#2ae370", "surface-container-low": "#131b2f", "surface-container-lowest": "#050e21", "on-primary-container": "#eeefff", "surface-container": "#171f33", "tertiary": "#2ae370", "secondary": "#a0e4ff", "on-tertiary-fixed": "#00210a", "surface-container-highest": "#2c3449", "on-secondary-fixed-variant": "#004d61", "surface": "#0a1326", "background": "#0a1326", "on-secondary": "#003544", "primary-fixed-dim": "#b4c5ff", "primary-container": "#2563eb", "tertiary-container": "#007e38", "surface-variant": "#2c3449", "primary": "#b4c5ff", "primary-fixed": "#dbe1ff", "surface-bright": "#31394e", "on-error-container": "#ffdad6", "secondary-fixed": "#b8eaff", "on-surface": "#dae2fd", "inverse-surface": "#dae2fd", "on-surface-variant": "#c3c6d7", "on-background": "#dae2fd", "on-tertiary-fixed-variant": "#005323", "inverse-primary": "#0053db", "secondary-fixed-dim": "#54d5ff", "error-container": "#93000a", "on-primary": "#002a78", "outline": "#8d90a0" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin": "2rem" }, "fontFamily": { "headline-md": [ "Manrope" ], "headline-sm": [ "Manrope" ], "body-sm": [ "Inter" ], "display-hero-mobile": [ "Manrope" ], "caption": [ "Inter" ], "body-xl": [ "Inter" ], "label-sm": [ "Inter" ], "label-md": [ "Inter" ], "headline-xl-mobile": [ "Manrope" ], "headline-xl": [ "Manrope" ], "headline-lg": [ "Manrope" ], "display-hero": [ "Manrope" ], "body-md": [ "Inter" ] }, "fontSize": { "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero-mobile": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "caption": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "body-xl": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" } ], "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-xl-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-xl": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "display-hero": [ "64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="NextGrowth BD Digital Marketing Logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V3sJXbUHgSrbsvI4lI1ZYreJyWRlEt61XvNXIgL3GTlRCfeUyz6Y0m1tgHSlL4ycEy9ntW6Zl1-OhggX4c9tRdAAtSDgMRsiVqT0Ypc48cvzL7S8LzRVQE_WXyNwpnXsxF3wrIeb_o7IABJDoBZP3FZfoUTtNTSlAdUsHUTzUvSv9rm7FQ_7qxfAJnb7zyklo5l7_j24bDkjGXNHUndUVM6Jnlve3cMJVbP5w1fI2oNxy8TpfudTNupt3bLGIE7vTic6f-UQF4BwY"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight hidden sm:inline-block">Next Growth BD</span></div><nav class="hidden lg:flex items-center gap-space-md bg-surface-container-low/70 px-space-md py-space-xs rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]" data-active-classes="bg-surface-container-high text-primary font-label-md"><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-colors bg-surface-container-high text-primary font-label-md" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-full transition-colors" data-path="services" href="#">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-full transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-full transition-colors" data-path="portfolio" href="#">Portfolio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-full transition-colors" data-path="blog" href="#">Blog</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-full transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:flex items-center gap-space-xs bg-primary-container text-on-primary-container px-space-lg py-space-xs rounded-full font-label-md text-label-md shadow-[0_4px_20px_rgba(0,207,255,0.25)] hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="https://wa.me/8801774749768" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Let's Talk</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full overflow-hidden">
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[942px] flex items-center justify-center py-space-xl lg:py-28 overflow-hidden bg-surface-container-lowest">
+<!-- Ambient directional light spots -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/20 rounded-full blur-[128px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-24 w-[32rem] h-[32rem] bg-secondary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute -bottom-24 left-1/3 w-80 h-80 bg-tertiary-container/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high/80 text-secondary font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>STRATEGY × CREATIVITY × TECHNOLOGY</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface tracking-tight max-w-2xl">
+          Turn Your Vision Into <span class="bg-gradient-to-r from-secondary-container via-primary-fixed to-tertiary bg-clip-text text-transparent">Digital Growth.</span>
+</h1>
+<!-- Supporting Body -->
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-xl">
+          We help businesses build stronger digital identities through creative marketing, strategic advertising, compelling content, and modern digital solutions.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-primary-container to-secondary-container text-surface-container-lowest px-8 py-4 rounded-full font-label-md text-label-md transition-all hover:scale-[1.02] shadow-[0_10px_30px_rgba(0,206,254,0.35)]" href="https://wa.me/8801774749768?text=Hello%20Next%20Growth%20BD,%20I%20would%20like%20to%20start%20a%20project" rel="noopener noreferrer" target="_blank">
+<span>Start a Project</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-surface-container-high/60 hover:bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-label-md text-label-md transition-all" href="#services-grid">
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span>
+<span>Explore Our Services</span>
+</a>
+</div>
+<!-- Metric Anchors -->
+<div class="grid grid-cols-3 gap-6 pt-space-lg w-full max-w-lg">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-tertiary">450%</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Avg. Ad ROI</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-secondary">12+</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Core Systems</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-primary-fixed">100%</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Transparent ROI</span>
+</div>
+</div>
+</div>
+<!-- Right Column: 3D Growth Art Composition -->
+<div class="lg:col-span-5 relative flex items-center justify-center py-6">
+<!-- Floating Glass Container -->
+<div class="relative w-full max-w-md aspect-[4/5] bg-surface-container/70 rounded-3xl p-6 shadow-[0_30px_70px_rgba(0,0,0,0.6)] backdrop-blur-2xl flex flex-col justify-between overflow-hidden">
+<!-- Holographic Gradient Shimmer -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-tertiary/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Section: Interactive Analytics Widget -->
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">trending_up</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Growth Engine</h4>
+<p class="font-caption text-caption text-on-surface-variant">Real-time Performance</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container/40 text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> +340%
+              </span>
+</div>
+<!-- SVG Data Visualizer -->
+<div class="w-full h-32 rounded-2xl bg-surface-container-lowest/80 p-3 flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>Revenue Trajectory</span>
+<span class="text-tertiary font-semibold">Live Scaling</span>
+</div>
+<svg class="w-full h-16 overflow-visible" preserveaspectratio="none" viewbox="0 0 300 70">
+<defs>
+<lineargradient id="chartGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00cefe" stop-opacity="0.5"></stop>
+<stop offset="100%" stop-color="#00cefe" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,60 C40,55 70,45 100,48 C140,52 180,25 220,20 C260,15 280,5 300,2" fill="none" stroke="#00cefe" stroke-linecap="round" stroke-width="3"></path>
+<path d="M0,60 C40,55 70,45 100,48 C140,52 180,25 220,20 C260,15 280,5 300,2 L300,70 L0,70 Z" fill="url(#chartGradient)"></path>
+<circle class="animate-ping" cx="300" cy="2" fill="#2ae370" r="5"></circle>
+<circle cx="300" cy="2" fill="#2ae370" r="4"></circle>
+</svg>
+</div>
+</div>
+<!-- Middle Floating Pill Card -->
+<div class="relative z-10 flex items-center gap-3.5 bg-surface-container-high/80 backdrop-blur-md p-3.5 rounded-2xl shadow-lg -translate-x-3 hover:translate-x-0 transition-transform">
+<div class="w-9 h-9 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Multichannel Reach</span>
+<span class="font-caption text-caption text-on-surface-variant">Meta, Google, YouTube &amp; TikTok</span>
+</div>
+</div>
+<!-- Bottom Card: Strategy Badge -->
+<div class="relative z-10 bg-surface-container-lowest/90 backdrop-blur-md p-4 rounded-2xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Precision Funnels</span>
+<span class="font-caption text-caption text-on-surface-variant">Strategy + Creative Execution</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary animate-bounce">arrow_upward</span>
+</div>
+</div>
+<!-- Floating Decorative Orb -->
+<div class="absolute -bottom-6 -right-4 w-28 h-28 rounded-full bg-gradient-to-tr from-tertiary/30 to-secondary-container/30 backdrop-blur-xl p-4 shadow-2xl flex items-center justify-center text-center">
+<span class="font-caption text-caption text-on-surface font-bold uppercase tracking-tight">Engineered for ROI</span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTRODUCTORY BRAND STRIP -->
+<section class="w-full bg-surface-container-low py-space-lg">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Our Foundation</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface mt-1">
+            Creative Thinking. Digital Solutions. <span class="text-tertiary">One Growth Partner.</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Built on disciplined methodologies designed to accelerate market share, cultivate customer loyalty, and scale revenues cleanly.
+        </p>
+</div>
+<!-- 4 Core Principles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container p-6 rounded-2xl shadow-md hover:bg-surface-container-high transition-all flex flex-col gap-3 group">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-secondary flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Strategic Planning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">In-depth market intelligence, competitive analysis, and audience segmentation guiding every move.</p>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl shadow-md hover:bg-surface-container-high transition-all flex flex-col gap-3 group">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Creative Execution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Thumb-stopping visual assets, high-converting ad copy, and bespoke branding that turns heads.</p>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl shadow-md hover:bg-surface-container-high transition-all flex flex-col gap-3 group">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/30 text-tertiary flex items-center justify-center group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Audience-Focused</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Crafting hyper-relevant messages tailored directly to consumer desires and purchase barriers.</p>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl shadow-md hover:bg-surface-container-high transition-all flex flex-col gap-3 group">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary-fixed flex items-center justify-center group-hover:bg-primary-fixed group-hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[24px]">query_stats</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Transparent Comms</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live performance dashboards, weekly progress calls, and absolute honesty with zero jargon.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3D SERVICES SECTION (12 Official Services) -->
+<section class="w-full py-space-xl lg:py-28 bg-surface" id="services-grid">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto gap-3">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">End-to-End Solutions</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface">
+          12 Powerful Services. <br class="hidden sm:inline"/>One Creative Growth Partner.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Complete, high-performance digital capabilities engineered to scale your brand across the full customer journey.
+        </p>
+</div>
+<!-- 12 Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 01 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">01</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">share</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Social Media Management</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consistent editorial calendars, community engagement, brand tone cultivation, and active profile expansion across all social platforms.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Social%20Media%20Management">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 02 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">02</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[24px]">ads_click</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Facebook &amp; Instagram Ads</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Data-backed Meta advertising with precision demographic targeting, creative split testing, and algorithmic scaling for exponential ROI.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Facebook%20and%20Instagram%20Ads">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 03 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">03</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">brush</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Graphic Design &amp; Promotional Content</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Striking visual assets, social banners, sales posters, and marketing collateral designed to command feed attention instantly.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Graphic%20Design">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 04 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">04</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">pin_drop</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Google Business Profile &amp; Local SEO</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Top local map rankings, optimized Google Business listing, review velocity strategies, and local citation dominance.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Google%20Business%20Profile%20and%20Local%20SEO">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 05 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">05</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[24px]">code</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Website &amp; E-commerce Development</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Blazing fast, responsive e-commerce stores and corporate websites engineered for conversion rates, seamless checkout, and search engines.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Website%20and%20Ecommerce%20Development">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 06 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">06</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">mic</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">AI Voiceover &amp; Audio Advertisement</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Studio-grade, emotive AI-powered voiceovers in multiple languages and dialects for commercial ads, podcasts, and video promotions.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20AI%20Voiceover%20Services">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 07 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">07</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[24px]">movie_edit</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">AI Promotional Video &amp; Video Editing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dynamic motion graphics, high-energy Reels/TikTok edits, and AI-assisted promotional videos crafted to hold customer retention.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20AI%20Promotional%20Video%20and%20Editing">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 08 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">08</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Logo Design &amp; Brand Identity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Memorable visual identities, scalable vector logos, color systems, typography guides, and complete brand style books.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Logo%20Design%20and%20Brand%20Identity">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 09 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">09</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">edit_note</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Content Writing &amp; Copywriting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Persuasive landing page copy, sales email sequences, SEO articles, and brand storytelling tuned to spark customer action.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Copywriting%20Services">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 10 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">10</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[24px]">smart_display</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">YouTube &amp; Content Creator Services</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Channel growth strategy, high-CTR thumbnail design, video SEO, audience retention optimization, and monetization management.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20YouTube%20Creator%20Services">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 11 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">11</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">smart_toy</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">AI Tools &amp; Automation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated lead routing, CRM integrations, AI customer service chatbots, and custom workflow automations that eliminate busywork.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20AI%20Tools%20and%20Automation">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 12 -->
+<div class="bg-surface-container-low/70 hover:bg-surface-container p-6 rounded-3xl backdrop-blur-xl shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-outline-variant/60 group-hover:text-secondary transition-colors">12</span>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Digital Strategy &amp; Consultation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive audits, high-level revenue architecture, funnel design, and ongoing advisory to navigate modern digital scaling.</p>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group-hover:text-tertiary transition-colors" href="https://wa.me/8801774749768?text=I%20am%20interested%20in%20Digital%20Strategy%20Consultation">
+<span>Explore Service</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED SERVICE CATEGORIES (3 Feature Panels) -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Integrated Capability Units</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface">
+          Three Focused Engines of Brand Velocity.
+        </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Panel 1: Performance Marketing -->
+<div class="relative bg-surface-container p-8 rounded-3xl shadow-xl flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 rounded-full blur-2xl"></div>
+<div class="flex flex-col gap-6 relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-secondary-container/20 text-secondary">Acquisition</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">query_stats</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Performance Marketing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Engineered to capture and convert high-intent buyers through targeted multi-platform ad channels.</p>
+</div>
+<ul class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> Social Media Management</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> Facebook &amp; Instagram Ads</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> Google Business Profile &amp; Local SEO</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full py-3 rounded-xl bg-surface-container-high hover:bg-secondary-container hover:text-on-secondary-container font-label-md text-label-md text-center block transition-colors" href="https://wa.me/8801774749768?text=Let%27s%20discuss%20Performance%20Marketing">
+              Deploy Campaign
+            </a>
+</div>
+</div>
+<!-- Panel 2: Creative Production -->
+<div class="relative bg-surface-container p-8 rounded-3xl shadow-xl flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-full blur-2xl"></div>
+<div class="flex flex-col gap-6 relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary">Brand &amp; Media</span>
+<span class="material-symbols-outlined text-tertiary text-[28px]">auto_videocam</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Creative Production</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Bespoke narrative craftsmanship combined with next-generation AI workflows for media that mesmerizes.</p>
+</div>
+<ul class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> Graphic Design &amp; Promotional Content</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> AI Voiceover &amp; Audio Ads</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> AI Promotional Video &amp; Editing</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> Logo Design, Copywriting &amp; YouTube</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full py-3 rounded-xl bg-surface-container-high hover:bg-tertiary hover:text-on-tertiary font-label-md text-label-md text-center block transition-colors" href="https://wa.me/8801774749768?text=Let%27s%20discuss%20Creative%20Production">
+              Ignite Creatives
+            </a>
+</div>
+</div>
+<!-- Panel 3: Digital Infrastructure & Strategy -->
+<div class="relative bg-surface-container p-8 rounded-3xl shadow-xl flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+<div class="flex flex-col gap-6 relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-primary-container/20 text-primary-fixed">Technology</span>
+<span class="material-symbols-outlined text-primary-fixed text-[28px]">terminal</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Digital Infrastructure</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Future-proof foundation that turns traffic into closed business with scalable systems and automation.</p>
+</div>
+<ul class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> Website &amp; E-commerce Development</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> AI Tools &amp; Automation Workflows</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> Digital Strategy &amp; Growth Consultation</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full py-3 rounded-xl bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md text-center block transition-colors" href="https://wa.me/8801774749768?text=Let%27s%20discuss%20Digital%20Infrastructure">
+              Build Systems
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE NEXT GROWTH BD -->
+<section class="w-full py-space-xl lg:py-28 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Visual Split: Photo & Dimension -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full h-[520px] rounded-3xl overflow-hidden shadow-2xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A modern, high-tech digital marketing agency war room in deep navy, cyan, and emerald green lighting. Marketers and creative strategists collaborating on sleek holographic data monitors and interactive dashboards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT-jv3_GDWK3P9p-XhaV1TlvnsVMPoh_6y-fUgaVLo8m9U4iEP4XFf13DPYB_780YfG4P46RSIfF5vRyyWUNf914MuOVZc_vKpWumSm1ZILF7tKxILrKa8qGI_uoTwQm0I7-n_Um_tLPtGg3c6QA7PjAkodd0jObDblfPNHbNpFOFpNAeiQTshlfwICqNM85GEKdzQ72uKdeuc7_N-B3FVwrT1VUxY5V-9AlDYqVVlKog21NMwbE4rUA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<!-- Floating Inset Pill -->
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-surface-container-high/90 backdrop-blur-xl shadow-lg flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Performance-Driven</p>
+<p class="font-caption text-caption text-tertiary">Zero vanity metrics. Genuine scale.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Content Split: 6 Pillars -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Why Next Growth BD</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface mt-1">
+            Big Ideas. Thoughtful Execution. <br class="hidden sm:inline"/><span class="text-secondary">Better Digital Experiences.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            We operate not merely as an external vendor, but as an embedded strategic partner invested directly in your sustained growth.
+          </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">adjust</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Tailored Solutions</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Custom strategies built specifically for your niche, margin structure, and growth stage.</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Consistent Branding</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cohesive visual aesthetics across social, web, and ads to reinforce trust and memorability.</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center gap-2 text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">person_search</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Audience-Focused</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deep psychological triggers and value positioning crafted for high consumer retention.</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Data-Informed Actions</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every marketing dollar is tracked, evaluated, and directed towards top-performing channels.</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Clear Communication</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct WhatsApp access and clear reports without ambiguous marketing jargon.</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-center gap-2 text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Collaborative Workflows</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Agile review cycles and rapid feedback integration to keep initiatives running ahead of schedule.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW WE WORK (Horizontal Connected Process) -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Execution Methodology</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface mt-1">
+            A Clear Process for Moving Forward.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          Simple, methodical, and predictable. We strip away friction so you see tangible progress every week.
+        </p>
+</div>
+<!-- Process Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container p-6 rounded-3xl flex flex-col gap-4 shadow-lg relative group">
+<div class="w-12 h-12 rounded-2xl bg-secondary-container/20 text-secondary flex items-center justify-center font-headline-md text-headline-md">
+            01
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Discover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Understand your business model, customer psychology, core objectives, and historical roadblocks through structured deep dives.
+          </p>
+<div class="flex items-center gap-1.5 text-secondary font-caption text-caption mt-auto pt-2">
+<span class="material-symbols-outlined text-[16px]">search</span> Research &amp; Audit
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container p-6 rounded-3xl flex flex-col gap-4 shadow-lg relative group">
+<div class="w-12 h-12 rounded-2xl bg-primary-container/20 text-primary-fixed flex items-center justify-center font-headline-md text-headline-md">
+            02
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Strategize</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Identify the optimal channel mix, creative direction, conversion funnels, and prioritize actions for highest velocity impact.
+          </p>
+<div class="flex items-center gap-1.5 text-primary-fixed font-caption text-caption mt-auto pt-2">
+<span class="material-symbols-outlined text-[16px]">map</span> Roadmapping
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container p-6 rounded-3xl flex flex-col gap-4 shadow-lg relative group">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-container/30 text-tertiary flex items-center justify-center font-headline-md text-headline-md">
+            03
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Execute</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Produce thumb-stopping creative, build landing experiences, deploy targeted campaigns, and configure tracking infrastructure.
+          </p>
+<div class="flex items-center gap-1.5 text-tertiary font-caption text-caption mt-auto pt-2">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span> Launch Phase
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container p-6 rounded-3xl flex flex-col gap-4 shadow-lg relative group">
+<div class="w-12 h-12 rounded-2xl bg-secondary-container/20 text-secondary flex items-center justify-center font-headline-md text-headline-md">
+            04
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Optimize</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Analyze behavioral telemetry, A/B test ad variations, refine copy, and systematically allocate budget to highest ROAS winners.
+          </p>
+<div class="flex items-center gap-1.5 text-secondary font-caption text-caption mt-auto pt-2">
+<span class="material-symbols-outlined text-[16px]">tune</span> Continuous Scale
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- CREATIVE PORTFOLIO SHOWCASE -->
+<section class="w-full py-space-xl lg:py-28 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Visual Portfolio</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface mt-1">
+            Where Creative Ideas Become <br class="hidden sm:inline"/><span class="text-tertiary">Digital Experiences.</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Explore concepts and campaign frameworks executed across various industry verticals with precision design and measurable outcomes.
+        </p>
+</div>
+<!-- Filter Tabs Container -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+<button class="px-5 py-2 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm whitespace-nowrap shadow-sm">All Concepts</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Social Media Creatives</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Paid Advertising</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Graphic Design</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Branding</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Website Design</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Video Production</button>
+</div>
+<!-- Portfolio Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+<!-- Item 1 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-xl flex flex-col">
+<div class="relative w-full h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant tech product campaign graphic featuring glowing 3D geometric shapes, energetic typography in electric blue and cyan colors on an ultramarine background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK7FuSfnlB4qKymOuYbsXiCxK2BaMGfiFM7PEOIbZBuqlCc2UtTtyjZIAfwZlH9DlQzyakEcJfDeUGEC2Ha_02P-whgQRyB4m1gQaQzJzbKQYQ3MSJnlGJdMjRdkHczRzw6ubL59o2JmRiJxWaVCTqg7bRvIIpoYAU1kieTZ27y53ddD_oEEnSz65yibs2mR6-RKDg98B3OaNaLxzFIFBGY2MgRjDO0VcOoX-DE-PavQdMpxjrscMgKQ"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm">Paid Advertising</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-2 bg-surface-container">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">AeroCloud Growth Campaign</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Multi-stage Meta ad set resulting in a 4.8x ROAS and +180% qualified leads within 60 days.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-xl flex flex-col">
+<div class="relative w-full h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek e-commerce store user interface mockup on a glass tablet screen displaying dynamic athletic shoes, glowing emerald price tags, and clean checkout screens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrGu-KpntimBmI0PqW_cIpoMgoe8NhkAC8G6RLkNcC6uRdNQ2mrDYLPsDpYg-pHNlmV7abaTe3m_4CKJQWxossqAWyNd74izH8l3O641x9zI2Y9CoTW5Cb6bUgIR4Y7zJwlpJKk69HUew_GFx0uRI_sIYsEg6NRbfisXBuke97kxGu7jhhz7qihCqKabMh2WwyF4gAMSjcCQ7er8GUKESd8PTCXgt4vFpuy-RuoujwVgwQEjN4RPNm3w"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm">E-commerce Dev</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-2 bg-surface-container">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">VoltFit Apparel Store</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Custom headless storefront with 99 Google PageSpeed score and instant cart checkout architecture.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group relative rounded-3xl overflow-hidden bg-surface-container shadow-xl flex flex-col">
+<div class="relative w-full h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-contrast brand identity system presentation showing embossed business stationery, dark mode logo guidelines, and neon typography in deep cyan." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdJ8wFAkCii6j3LeXwhXEgaGmxVxell8TOa0XOk3Apb-_gc6gL7TqPhthEdTsyTp2Yr-ubW3Ynz9BGh3p0SsnYKGwgh2k3YsNPKLvb3rIqlwqywzKj4h_25lXFdBB9UVeMTK4S98kLkvNridBD3It84-prfiDQhcUD6QYwoEH6G2qLTZylKLuKYsMw7jv50m91kLpM1RqQQVW7sbkp1W-dcRLX1JqDOfIqraKKOwLX4zDlLcef76zGzA"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary-fixed font-label-sm text-label-sm">Brand Identity</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-2 bg-surface-container">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary-fixed transition-colors">Nexus Mobility Brand System</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Holistic visual positioning, 3D icon set, and typographic hierarchy designed for enterprise expansion.</p>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="flex justify-center pt-space-md">
+<a class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all shadow-md" href="https://wa.me/8801774749768?text=I%20would%20like%20to%20view%20more%20portfolio%20work">
+<span>Explore Our Full Portfolio</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- WHO WE SERVE (Dual Split Cards) -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-lg">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Market Reach</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface">
+          From Bangladesh to the Global Marketplace.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We bridge hyper-local precision with international operational benchmarks to serve bold founders everywhere.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+<!-- Bangladesh Market Card -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-xl flex flex-col justify-between gap-6 relative overflow-hidden group">
+<div class="flex flex-col gap-4">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-container/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">flag</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Bangladesh Ecosystem</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tailored growth solutions crafted for Bangladeshi e-commerce merchants, local startups, retail brands, and service businesses navigating local consumer trends, bKash/Nagad checkout funnels, and high-conversion Bengali-English content marketing.
+            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">F-Commerce Acceleration</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Local Search SEO</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Direct WhatsApp Funnels</span>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-tertiary font-label-md text-label-md hover:underline" href="https://wa.me/8801774749768?text=Hello%20Next%20Growth%20BD,%20I%20run%20a%20business%20in%20Bangladesh">
+<span>Scale In Bangladesh</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- International Market Card -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-xl flex flex-col justify-between gap-6 relative overflow-hidden group">
+<div class="flex flex-col gap-4">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">public</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">International Reach</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Comprehensive digital marketing, UI/UX design, AI audio-video production, and conversion funnels engineered for businesses seeking global audience acquisition across North America, the UK, Europe, Australia, and the Middle East.
+            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Global Meta Ad Networks</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">AI Multimedia Production</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Cross-border E-commerce</span>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-secondary font-label-md text-label-md hover:underline" href="https://wa.me/8801774749768?text=Hello%20Next%20Growth%20BD,%20I%20am%20looking%20for%20Global%20Marketing%20Services">
+<span>Expand Internationally</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TRUST & WORKING PRINCIPLES -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Integrity by Design</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface mt-1">
+            How We Build Better <br class="hidden sm:inline"/><span class="text-primary">Working Relationships.</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          No locking clients into ambiguous contracts. We earn your partnership every single month through proven execution.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 pt-2">
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px]">mark_chat_read</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Transparent Comms</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Regular briefings, swift WhatsApp responses, and open lines at every stage.</p>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<span class="material-symbols-outlined text-tertiary text-[28px]">assignment_turned_in</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Clear Scopes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Strict deliverable roadmaps with transparent timelines and no hidden fees.</p>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-[28px]">draw</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Thoughtful Craft</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Design and copy created with extreme care, respecting your brand's unique ethos.</p>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<span class="material-symbols-outlined text-secondary text-[28px]">table_chart_view</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Honest Reporting</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real numbers and candid feedback on what works and what needs refinement.</p>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col gap-3">
+<span class="material-symbols-outlined text-tertiary text-[28px]">autorenew</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Constant Evolution</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We continually adopt newer AI tools, testing methodologies, and creative angles.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ ACCORDION SECTION -->
+<section class="w-full py-space-xl lg:py-28 bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto px-6 lg:px-12 flex flex-col gap-space-lg">
+<div class="flex flex-col items-center text-center gap-2">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Clarification</span>
+<h2 class="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface">
+          Questions? Let's Make Things Clear.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Everything you need to know about partnering with Next Growth BD.
+        </p>
+</div>
+<div class="flex flex-col gap-4 pt-4" id="faq-container">
+<!-- FAQ 1 -->
+<div class="rounded-2xl bg-surface-container p-6 shadow-md transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What makes Next Growth BD different from other digital agencies?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-sm text-body-sm">
+            We merge end-to-end performance marketing with cutting-edge AI creative production and technical engineering. Instead of treating services in isolation, we build interconnected growth funnels where your branding, social ads, website, and automations reinforce one another for maximum ROI.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-2xl bg-surface-container p-6 shadow-md transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Do you work with startups and small businesses or only enterprise brands?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-sm text-body-sm">
+            We work with both! Whether you are an ambitious local brand in Bangladesh launching an e-commerce shop, or an international company scaling multi-channel ad spend, we design modular packages that match your current budget and scale as your revenues expand.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-2xl bg-surface-container p-6 shadow-md transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">How do you track and report campaign performance?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-sm text-body-sm">
+            You get complete transparency with live analytics dashboards tracking ROAS, conversion cost (CPA), qualified leads, click-through rates, and organic traffic growth. We conduct bi-weekly or monthly strategy reviews to explain trends clearly.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-2xl bg-surface-container p-6 shadow-md transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What is the onboarding process once we decide to work together?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-sm text-body-sm">
+            Onboarding takes less than 48 hours. After our initial discovery chat, we set up a dedicated communication channel on WhatsApp or Slack, gather brand assets, conduct an in-depth audit, and share an actionable timeline before launching any campaigns.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="rounded-2xl bg-surface-container p-6 shadow-md transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">How do your AI Voiceover and Video services work?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-sm text-body-sm">
+            We combine high-end synthetic intelligence audio models with human audio mastering to generate natural, compelling voiceovers in multiple dialects. We combine these with custom video editing, dynamic captioning, and motion graphics tailored for maximum retention on Reels, TikTok, and YouTube.
+          </div>
+</div>
+<!-- FAQ 6 -->
+<div class="rounded-2xl bg-surface-container p-6 shadow-md transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">How do I get started with Next Growth BD today?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-sm text-body-sm">
+            Simply click the 'Start a Project' button or message us directly on WhatsApp at +8801774749768. We will respond promptly, discuss your current needs, and prepare a tailored strategy proposal.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- DRAMATIC FINAL CTA SECTION -->
+<section class="relative w-full py-space-xl lg:py-32 bg-surface-container-lowest overflow-hidden">
+<!-- Ambient glow behind CTA -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-[40rem] h-[25rem] bg-gradient-to-r from-primary-container/20 via-secondary-container/20 to-tertiary-container/20 rounded-full blur-[140px]"></div>
+</div>
+<div class="max-w-5xl mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-center text-center gap-space-md">
+<!-- Brand Crest Pill -->
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high/80 text-tertiary font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Your Growth, Our Mission.</span>
+</div>
+<h2 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface tracking-tight max-w-3xl">
+        Your Next Chapter of <span class="bg-gradient-to-r from-secondary-container via-primary-fixed to-tertiary bg-clip-text text-transparent">Digital Growth</span> Starts Here.
+      </h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-2xl">
+        Tell us about your goals, explore the possibilities, and let's discuss the right digital solutions for your business.
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-primary-container to-secondary-container text-surface-container-lowest px-10 py-5 rounded-full font-label-md text-label-md transition-all hover:scale-105 shadow-[0_12px_40px_rgba(0,206,254,0.4)]" href="https://wa.me/8801774749768?text=Hello%20Next%20Growth%20BD,%20I%20am%20ready%20to%20start%20a%20project!" rel="noopener noreferrer" target="_blank">
+<span>Start a Project Now</span>
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+</a>
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-surface-container-high/70 hover:bg-surface-container-high text-tertiary px-10 py-5 rounded-full font-label-md text-label-md transition-all" href="https://wa.me/8801774749768" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Quick Agency Location Badge -->
+<div class="pt-space-md flex flex-wrap items-center justify-center gap-6 font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+<span>Sirajganj Sadar, Sirajganj, Bangladesh</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">mail</span>
+<span>nasiruddinnoyon28@gmail.com</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">support_agent</span>
+<span>WhatsApp: +8801774749768</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleFaq(element) {
+    const content = element.querySelector('.faq-content');
+    const icon = element.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+    
+    // Close all FAQs first
+    document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+    document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+    // Toggle current
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface pt-space-xl pb-space-lg shadow-[0_-1px_12px_rgba(0,0,0,0.5)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><img alt="NextGrowth BD Digital Marketing Logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V3sJXbUHgSrbsvI4lI1ZYreJyWRlEt61XvNXIgL3GTlRCfeUyz6Y0m1tgHSlL4ycEy9ntW6Zl1-OhggX4c9tRdAAtSDgMRsiVqT0Ypc48cvzL7S8LzRVQE_WXyNwpnXsxF3wrIeb_o7IABJDoBZP3FZfoUTtNTSlAdUsHUTzUvSv9rm7FQ_7qxfAJnb7zyklo5l7_j24bDkjGXNHUndUVM6Jnlve3cMJVbP5w1fI2oNxy8TpfudTNupt3bLGIE7vTic6f-UQF4BwY"/><span class="font-headline-sm text-headline-sm text-on-surface">Next Growth BD</span></div><p class="font-headline-sm text-headline-sm text-tertiary">Your Growth, Our Mission.</p><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Next Growth BD is a premier digital marketing agency empowering high-velocity brands with performance marketing, precision analytics, creative content, and conversion optimization strategies designed to scale revenue.</p><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant pt-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span><span>Sirajganj Sadar, Sirajganj, Bangladesh</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">mail</span><a class="hover:text-primary transition-colors" href="mailto:nasiruddinnoyon28@gmail.com">nasiruddinnoyon28@gmail.com</a></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[18px]">phone_iphone</span><a class="hover:text-tertiary transition-colors" href="https://wa.me/8801774749768" rel="noopener noreferrer" target="_blank">WhatsApp: +8801774749768</a></div></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Performance</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Search Engine Optimization (SEO)</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Pay-Per-Click Advertising (PPC)</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Social Media Marketing</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Conversion Rate Optimization</a></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Growth &amp; Tech</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Performance Content Marketing</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Email &amp; Automation Funnels</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Influencer Marketing Campaigns</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Web Analytics &amp; Attribution</a></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Creative &amp; Brand</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Brand Strategy &amp; Identity</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">UI/UX &amp; Landing Page Design</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Video Production &amp; Creative Ads</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">E-Commerce Growth Systems</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-caption text-caption"><p>© 2025 Next Growth BD. All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="text-tertiary hover:underline" href="https://wa.me/8801774749768" rel="noopener noreferrer" target="_blank">Direct WhatsApp Support</a></div></div></div></footer></body></html>
